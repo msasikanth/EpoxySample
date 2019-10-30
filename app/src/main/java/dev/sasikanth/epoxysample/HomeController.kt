@@ -2,6 +2,7 @@ package dev.sasikanth.epoxysample
 
 import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.Carousel
+import com.airbnb.epoxy.carousel
 import dev.sasikanth.epoxysample.data.Message
 import dev.sasikanth.epoxysample.data.Profile
 
@@ -31,7 +32,6 @@ class HomeController : AsyncEpoxyController() {
         carousel {
             id("recent")
             padding(Carousel.Padding.dp(0, 4, 0, 16, 8))
-            hasFixedSize(true)
             models(models)
         }
 

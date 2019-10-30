@@ -18,7 +18,7 @@ abstract class RecentlyActiveItemModel : EpoxyModelWithHolder<RecentlyActiveItem
     override fun bind(holder: Holder) {
         super.bind(holder)
         with(profile) {
-            holder.profileName.text = profileName
+            holder.profileName.text = name
             holder.lastSeen.text = lastSeen
         }
     }
