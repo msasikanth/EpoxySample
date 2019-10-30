@@ -25,7 +25,7 @@ class HomeController : AsyncEpoxyController() {
             title("Recently Active")
         }
         val models = recentlyActive.map {
-            RecentlyActiveItemModel_()
+            RecentlyActiveItemBindingModel_()
                 .id(it.id)
                 .profile(it)
         }
